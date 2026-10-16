@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone Gym</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>FITZONE GYM</h1>
+        <p>Your Fitness, Our Mission</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#plans">Membership Plans</a>
+        <a href="#join">Join Now</a>
+    </nav>
+
+    <section id="home" class="hero">
+        <h2>BUILD YOUR BEST SELF</h2>
+        <p>Train Hard. Stay Strong. Live Healthy.</p>
+        <a class="btn" href="#join">Join Our Gym</a>
+    </section>
+
+    <section id="plans">
+        <h2>Our Membership Plans</h2>
+        <div class="plans">
+            <div class="plan">
+                <h3>Monthly</h3>
+                <p>₹1,000 / month</p>
+            </div>
+            <div class="plan">
+                <h3>Quarterly</h3>
+                <p>₹2,700 / 3 months</p>
+            </div>
+            <div class="plan">
+                <h3>Yearly</h3>
+                <p>₹9,000 / year</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="join">
+        <h2>Join FitZone Gym</h2>
+        <form id="joinForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <select id="plan" required>
+                <option value="">Select Membership Plan</option>
+                <option>Monthly</option>
+                <option>Quarterly</option>
+                <option>Yearly</option>
+            </select>
+            <button type="submit">Register Now</button>
+        </form>
+        <p id="message"></p>
+    </section>
+    
+<section id="members">
+    <h2>Registered Members</h2>
+    <button type="button" id="viewMembers">View Members</button>
+    <div id="memberList"></div>
+</section>
+
+
+    <footer>
+        <p>© 2026 FitZone Gym | Stay Fit, Stay Strong</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
